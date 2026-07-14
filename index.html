@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Pengaturan dasar website -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul Website -->
+    <title>Blue Heart | A Personal Interactive Website</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- Background Bubble -->
+    <!-- ============================= -->
+
+    <div class="background">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!-- ============================= -->
+    <!-- Navbar -->
+    <!-- ============================= -->
+
+    <header>
+
+        <div class="logo">
+            💙 fannmut
+        </div>
+
+        <nav>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#message">Message</a>
+
+        </nav>
+
+    </header>
+
+    <!-- ============================= -->
+    <!-- Hero Section -->
+    <!-- ============================= -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <h1>
+                Welcome To
+                <span>My Page</span>
+            </h1>
+
+            <p>
+                Every words means a lot for me.
+                And everyone who open this page also means a lot for me.
+            </p>
+            <button onclick="mulaiJourney()">
+                Start journey 💙
+            </button>
+
+            <div class="social-media">
+
+                <a href="https://instagram.com/xynn_fanny" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <a href="https://tiktok.com/@fann.stills" target="_blank">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+
+        </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+                src="./img/profile.jpeg"
+                alt="Foto Profile">
+
+        </div>
+
+    </section>
+
+    
+    <!-- ===========================
+        ABOUT ME
+    =========================== -->
+
+    <section class="about" id="about">
+
+        <h2>👤 ABOUT MYSELF</h2>
+
+        <div class="about-card">
+
+            <img src="./img/profile.jpeg" alt="Foto Profil">
+
+            <h3>Fanny</h3>
+
+            <p class="job">Student | TKJ 1</p>
+
+            <p class="motto">
+                "Beda mood, beda aksara; atur pace, kejar mimpi sampai ke luar negeri"
+            </p>
+
+            <div class="biodata">
+
+                <div class="item">
+                    <strong> Nama</strong>
+                    <span>Fanny</span>
+                </div>
+
+                <div class="item">
+                    <strong> Umur </strong>
+                    <span>17 Tahun</span>
+                </div>
+
+                <div class="item">
+                    <strong> Sekolah </strong>
+                    <span> SMK Muhammadiyah 3 Metro</span>
+                </div>
+
+                <div class="item">
+                    <strong> Kelas </strong>
+                    <span>XII TKJ 1</span>
+                </div>
+
+                <div class="item">
+                    <strong> Jurusan </strong>
+                    <span>Teknik Komputer dan Jaringan</span>
+                </div>
+
+                <div class="item">
+                    <strong> Hobi</strong>
+                    <span>Memasak</span>
+                </div>
+
+                <div class="item">
+                    <strong> Cita-cita</strong>
+                    <span>Bekerja di luar negeri</span>
+                </div>
+
+                <div class="item">
+                    <strong>Asal</strong>
+                    <span>Metro, Lampung</span>
+                </div>
+
+            </div>
+
+            <p class="thanks">
+                💙 love uuu teman teman aku
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="love" id="love">
+
+        <h2>❤️ Seberapa cinta kamu sama aku ?</h2>
+
+        <p>di geser yaa sayang 💙</p>
+
+        <input
+            type="range"
+            min="0"
+            max="100"
+            value="0"
+            id="loveSlider">
+
+        <h3 id="loveValue">0%</h3>
+
+        <p id="loveText"> humm di geser duluuu </p>
+
+    </section>
+
+    <section class="gallery" id="gallery">
+
+        <h2>📷 Gallery kenangan</h2>
+
+        <div class="gallery-container">
+
+            <div class="card">
+                <img src="./img/profile1.jpeg">
+            </div>
+
+            <div class="card">
+                <img src="./img/profile2.jpeg">
+            </div>
+
+            <div class="card">
+                <img src="./img/profile3.jpeg">
+            </div>
+
+            <div class="card">
+                <img src="./img/profile4.jpeg">
+            </div>
+
+            <div class="card">
+                <img src="./img/profile5.jpeg">
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="message" id="message">
+
+    <h2>💌 Messages for me</h2>
+
+    <p class="pesan-awal">
+        makasiiii udah mau berkunjung ke website kecil ini.
+        have a nice day y'all 💙💙💙💙💙💙💙
+    </p>
+
+    <div class="message-box">
+
+        <input type="text" id="nama" placeholder="Nama Kamu">
+
+        <textarea
+            id="pesan"
+            rows="5"
+            placeholder="Tulis pesan manis di sini..."></textarea>
+
+        <button onclick="kirimPesan()">
+            💙 Kirim Pesan
+        </button>
+
+    </div>
+
+    <div id="listPesan"></div>
+
+    </section>
+
+    <!-- JavaScript -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="firebase.config.js"></script>
+
+    <script src="script.js"></script>
+    <div id="loveContainer"></div>
+
+</body>
+</html>
