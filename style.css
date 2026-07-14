@@ -1,0 +1,701 @@
+/* ====GOOGLE FONT===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+/* ====RESET==== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+
+
+/* ====BODY===== */
+
+body{
+
+    background:linear-gradient(135deg,#dbeafe,#eff6ff,#bfdbfe);
+
+    color:#1e3a8a;
+
+}
+
+
+
+/* ====NAVBAR===== */
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 8%;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:#2563eb;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    margin-left:20px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:#1d4ed8;
+
+}
+
+
+
+/* =====HERO===== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:120px 8%;
+
+    gap:60px;
+
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.hero-text h1{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text span{
+
+    color:#2563eb;
+
+}
+
+.hero-text p{
+
+    font-size:18px;
+
+    line-height:32px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+/* =====BUTTON===== */
+
+.hero-text button{
+
+    padding:16px 40px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#3b82f6;
+
+    color:white;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+    box-shadow:0 12px 30px rgba(59,130,246,.35);
+
+}
+
+.hero-text button:hover{
+
+    transform:translateY(-5px);
+
+    background:#2563eb;
+
+}
+
+
+
+/* =====FOTO===== */
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:420px;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 40px rgba(59,130,246,.35);
+
+    transition:.4s;
+
+}
+
+.hero-image img:hover{
+
+    transform:scale(1.04);
+
+}
+
+/* =====LOVE SLIDER===== */
+
+.love{
+
+    min-height:100vh;
+
+    padding:120px 8%;
+
+    text-align:center;
+
+    background:#f5f9ff;
+
+}
+
+.love h2{
+
+    font-size:45px;
+
+    color:#2563eb;
+
+    margin-bottom:20px;
+
+}
+
+.love p{
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+}
+
+#loveSlider{
+
+    width:70%;
+
+    margin-top:20px;
+
+}
+
+#loveValue{
+
+    margin-top:30px;
+
+    font-size:60px;
+
+    color:#2563eb;
+
+}
+
+#loveText{
+
+    margin-top:10px;
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+/* =====GALLERY===== */
+
+.gallery{
+
+    padding:120px 8%;
+
+    background:#eef5ff;
+
+}
+
+.gallery h2{
+
+    text-align:center;
+
+    font-size:45px;
+
+    color:#2563eb;
+
+    margin-bottom:60px;
+
+}
+
+.gallery-container{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:30px;
+}
+
+.card{
+    width: 220px;
+    overflow:hidden;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+.card{
+    text-align: center;
+}
+
+.card img{
+
+    width:100%;
+    display:block;
+    border-radius: 20px;
+    transition:.4s;
+
+}
+
+.card:hover img{
+
+    transform:scale(1.1);
+
+}
+
+/* ====ABOUT===== */
+
+.about{
+
+    padding:120px 8%;
+    background:#eef6ff;
+
+}
+
+.about h2{
+
+    text-align:center;
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:50px;
+
+}
+
+.about-card{
+
+    max-width:750px;
+    margin:auto;
+    background:white;
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.1);
+
+}
+
+.about-card img{
+
+    width:170px;
+    height:170px;
+    object-fit:cover;
+    border-radius:50%;
+    display:block;
+    margin:auto;
+    border:5px solid #bfdbfe;
+
+}
+
+.about-card h3{
+
+    text-align:center;
+    margin-top:20px;
+    font-size:35px;
+    color:#2563eb;
+
+}
+
+.job{
+
+    text-align:center;
+    color:#666;
+    margin-top:10px;
+
+}
+
+.motto{
+
+    text-align:center;
+    margin:30px 0;
+    font-style:italic;
+    color:#555;
+    line-height:30px;
+
+}
+
+.biodata{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+
+}
+
+.item{
+
+    background:#eff6ff;
+    border-radius:15px;
+    padding:18px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items: flex-start;
+    transition:.3s;
+
+}
+
+.item strong{
+    width:110px;
+    color:#2563eb;
+    font-weight: 600;
+    text-align: left;
+}
+
+.item span{
+    flex:1;
+    text-align:right;
+    word-break:break-word;
+    color:#333;
+}
+
+.item:hover{
+
+    transform:translateY(-5px);
+    background:#dbeafe;
+
+}
+
+.thanks{
+
+    text-align:center;
+    margin-top:35px;
+    color:#2563eb;
+    font-weight:bold;
+    font-size:18px;
+
+}
+
+/* ====RESPONSIVE ABOUT==== */
+
+@media(max-width:768px){
+
+.biodata{
+
+grid-template-columns:1fr;
+
+}
+
+.about-card{
+
+padding:25px;
+
+}
+
+.about-card img{
+
+width:140px;
+height:140px;
+
+}
+
+.about-card h3{
+
+font-size:28px;
+
+}
+
+}
+
+/* ====RESPONSIVE HP===== */
+
+@media (max-width:900px){
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+flex-direction:column-reverse;
+
+text-align:center;
+
+}
+
+.hero-text h1{
+
+font-size:38px;
+
+}
+
+.hero-image img{
+
+width:300px;
+
+}
+
+header{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+}
+
+.message{
+    padding:120px 8%;
+    background:#f8fbff;
+    text-align:center;
+}
+
+.message h2{
+    font-size:45px;
+    color:#2563eb;
+    margin-bottom:20px;
+}
+
+.pesan-awal{
+    max-width:650px;
+    margin:auto;
+    line-height:32px;
+    margin-bottom:40px;
+}
+
+.message-box{
+    max-width:600px;
+    margin:auto;
+}
+
+.message-box input,
+.message-box textarea{
+
+    width:100%;
+    padding:16px;
+    margin:12px 0;
+    border:none;
+    border-radius:15px;
+    background:#eef5ff;
+    font-size:16px;
+}
+
+.message-box button{
+
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:15px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.message-box button:hover{
+
+    background:#1d4ed8;
+}
+
+.pesan-item{
+
+    max-width:600px;
+    margin:20px auto;
+    background:white;
+    padding:18px;
+    border-radius:15px;
+    text-align:left;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.pesan-item h4{
+
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.atasPesan{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.hapusBtn{
+    border:none;
+    background:#ff4d6d;
+    color:white;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.hapusBtn:hover{
+    background:#e60039;
+    transform:scale(1.1);
+}
+
+.social-media{
+    display:flex;
+    gap:18px;
+    margin-top:20px;
+}
+
+.social-media a{
+    width:50px;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#fff;
+    color:#2f5cff;
+    font-size:22px;
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.social-media a:hover{
+    transform:translateY(-5px);
+    background:#2f5cff;
+    color:#fff;
+}
+
+/* ==========================
+   LOVE EFFECT
+========================== */
+
+.flying-heart{
+    position:fixed;
+    pointer-events:none;
+    z-index:99999;
+    animation:heartFly 4s linear forwards;
+    user-select:none;
+}
+
+@keyframes heartFly{
+
+    0%{
+        transform:translateY(0) scale(.5) rotate(0deg);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:
+        translateY(-700px)
+        translateX(calc(-100px + 200px * var(--x)))
+        rotate(720deg)
+        scale(2);
+
+        opacity:0;
+    }
+
+}
+
+.sparkle{
+    position:fixed;
+    pointer-events:none;
+    z-index:99998;
+    animation:spark 2.5s linear forwards;
+}
+
+@keyframes spark{
+
+    from{
+        transform:scale(.5);
+        opacity:1;
+    }
+
+    to{
+        transform:scale(2);
+        opacity:0;
+    }
+
+}
